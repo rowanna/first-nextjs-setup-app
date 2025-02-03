@@ -6,7 +6,8 @@ export default function Customers() {
   };
   try {
     handleError();
-  } catch (error) {
+  } catch (err) {
+    console.log(err);
     console.log(process.env.NODE_ENV, "===");
 
     notFound();
